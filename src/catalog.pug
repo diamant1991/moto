@@ -1,0 +1,20 @@
+extends pug/base
+
+append vars
+
+block content
+	include pug/partials/header
+
+	.content
+		.container
+			.row.no-gutters.justify-content-between
+				include pug/partials/sidebar
+
+				.content__right
+					include pug/partials/products
+
+	include pug/partials/manufacturer
+
+	include pug/partials/map
+
+	include pug/partials/footer

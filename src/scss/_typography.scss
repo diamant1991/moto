@@ -1,0 +1,52 @@
+h2 {
+	font-size: 36px;
+	font-weight: 600;
+
+	@include m991 {
+		font-size: 30px;
+	}
+
+	@include m767 {
+    font-size: 24px;
+  }
+}
+
+.item-title {
+	text-transform: uppercase;
+	margin-bottom: 80px;
+
+	&--blue {
+		color: $color-blue;
+	}
+
+	&--manufacturer {
+		margin-bottom: 60px;
+	}
+
+	@include m991 {
+		margin-bottom: 50px;
+	}
+
+	@include m767 {
+    margin-bottom: 30px;
+  }
+}
+
+.text-block {
+	font-size: 16px;
+	color: #333;
+
+	h5 {
+		margin-top: 20px;
+		font-size: 16px;
+	}
+
+	p {
+		margin-top: 20px;
+	}
+
+	@include m767 {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+}

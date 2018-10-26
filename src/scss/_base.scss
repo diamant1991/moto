@@ -1,0 +1,50 @@
+html {
+	box-sizing: border-box;
+}
+
+body {
+	line-height: 1.2;
+	font-family: $open;
+	font-size: 14px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+b {
+	font-weight: bold;
+}
+
+i {
+	font-style: italic;
+}
+
+.btn {
+	display: inline-block;
+	vertical-align: middle;
+
+	&-blue {
+		background: $color-blue;
+		color: #fff;
+		padding: 15px;
+		text-align: center;
+	}
+
+	&-map {
+		margin-top: 10px;
+		width: 100%;
+		font-size: 32px;
+		padding: 20px;
+		text-transform: uppercase;
+
+		@include m991 {
+			font-size: 24px;
+		}
+
+		@include m575 {
+			font-size: 20px;
+		}
+	}
+}

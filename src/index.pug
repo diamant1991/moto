@@ -1,0 +1,32 @@
+extends pug/base
+
+append vars
+
+block content
+	include pug/partials/header
+
+	include pug/partials/slider
+
+	.content
+		.container
+			.row.no-gutters.justify-content-between
+				include pug/partials/sidebar
+
+				.content__right
+					include pug/partials/catalog
+
+					.tab.row.no-gutters
+						a(href="#").tab__item.is-active Рекомендуем
+						a(href="#").tab__item Новинки
+						a(href="#").tab__item Хит продаж
+						a(href="#").tab__item Скидки
+					
+					include pug/partials/products
+
+					include pug/partials/text-block
+
+	include pug/partials/manufacturer
+
+	include pug/partials/map
+
+	include pug/partials/footer

@@ -1,0 +1,265 @@
+.top-panel{
+	font-size: 16px;
+	padding: 10px 0;
+	background: #ededed;
+
+	&__link {
+		line-height: 1;
+		color: #333;
+		border-bottom: 1px solid transparent;
+
+		&:hover {
+			border-color: #333;
+		}
+	}
+
+	&__delimiter {
+		margin: 0 5px;
+	}
+
+	.fa {
+		font-size: 18px;
+		color: $color-blue;
+		margin-right: 5px;
+	}
+	
+	@include m767 {
+    font-size: 14px;
+  }
+}
+
+.header {
+	&__center {
+		padding: 15px 0;
+		color: #333;
+	}
+
+	&__title{
+		font-size: 18px;
+		margin-bottom: 5px;
+		padding-left: 35px;
+
+		@include m991 {
+			font-size: 16px;
+		}
+
+		@include m575 {
+			padding-left: 0;
+		}
+	}
+
+	&__contacts {
+		@include m575 {
+			margin-top: 20px;
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	&__info {
+		@include m575 {
+			width: 100%;
+			text-align: center;
+		}
+	}
+}
+
+.logo{
+	&__text {
+		font-size: 72px;
+		color: $color-blue;
+		text-transform: uppercase;
+		text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.35);
+		font-weight: 600;
+
+		@include m1199 {
+			font-size: 50px;
+		}
+
+		@include m991 {
+			font-size: 38px;
+		}
+	}
+
+	@include m767 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.time {
+	font-size: 18px;
+	position: relative;
+	margin-bottom: 15px;
+	padding-left: 35px;
+
+	.fa{
+		color: $color-blue;
+		position: absolute;
+		left: 0;
+		top: -5px;
+		font-size: 28px;
+
+		@include m575 {
+			display: none;
+		}
+	}
+
+	@include m991 {
+		font-size: 14px;
+	}
+
+	@include m575 {
+		padding-left: 0;
+	}
+}
+
+.search{
+	width: 450px;
+	position: relative;
+
+	&__field{
+		display: block;
+		width: 100%;
+		height: 35px;
+		font-size: 16px;
+		padding-left: 15px;
+		padding-right: 35px;
+		border-radius: 4px;
+		border: 1px solid #e4e4e4;
+		font-family: $open;
+
+		@include m991 {
+			font-size: 14px;
+		}
+	}
+
+	&__btn{
+		border: 0;
+		outline: 0;
+		background: none;
+		cursor: pointer;
+		color: #a2a1a1;
+		position: absolute;
+		z-index: 2;
+		right: 10px;
+		top: 45%;
+		transform: translate(0, -50%);
+	}
+
+	@include m1199 {
+		width: 370px;
+	}
+
+	@include m991 {
+		width: 245px;
+	}
+
+	@include m575 {
+		width: 100%;
+	}
+}
+
+.phone {
+	color: #333;
+	font-size: 16px;
+	margin-bottom: 10px;
+
+	.fa{
+		color: $color-blue;
+		margin-right: 5px;
+	}
+
+	@include m991 {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+}
+
+.social {
+	text-align: center;
+
+	&__item {
+		display: inline-block;
+		vertical-align: middle;
+		background: $color-blue;
+		width: 35px;
+		height: 35px;
+		text-align: center;
+		line-height: 32px;
+		color: #fff;
+
+		+ .social__item {
+			margin-left: 5px;
+		}
+
+		.fa {
+			font-size: 24px;
+			vertical-align: middle;
+		}
+	}
+
+	@include m575 {
+		margin-top: 10px;
+	}
+}
+
+.nav {
+	background: #454443;
+
+	li {
+		display: inline-block;
+		vertical-align: middle;
+
+		@include m991 {
+			display: block;
+			width: 100%;
+		}
+	}
+	&__menu {
+		&__item {
+			display: block;
+			padding: 20px 10px;
+			color: #fff;
+			text-transform: uppercase;
+
+			&:hover {
+				background: $color-blue;
+			}
+
+			@media(max-width: 1399px) {
+				padding: 20px 5px;
+			}
+
+			@media(max-width: 1199px) {
+				font-size: 11px;
+			}
+
+			@include m991 {
+				padding: 10px;
+				font-size: 14px;
+			}
+		}
+
+		@include m991 {
+			display: none;
+		}
+	}
+
+	@include m991 {
+		padding: 10px 0;
+	}
+}
+
+.dropdown-toggle {
+	text-align: right;
+
+	@include m992 {
+		display: none;
+	}
+
+	@include m991 {
+		cursor: pointer;
+	}
+}
