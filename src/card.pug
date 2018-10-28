@@ -1,0 +1,129 @@
+extends pug/base
+
+append vars
+
+block content
+	include pug/partials/header
+
+	.content
+		.container
+			include pug/partials/breadcrumb
+
+			.product.row
+				.col-lg-6
+					.product__slider
+						.product__slider__item
+							.product__slider__img.row.no-gutters.align-items-center
+								div
+									img(src="http://via.placeholder.com/450x280", alt="")
+						.product__slider__item
+							.product__slider__img.row.no-gutters.align-items-center
+								div
+									img(src="http://via.placeholder.com/450x280", alt="")
+						.product__slider__item
+							.product__slider__img.row.no-gutters.align-items-center
+								div
+									img(src="http://via.placeholder.com/450x280", alt="")
+						.product__slider__item
+							.product__slider__img.row.no-gutters.align-items-center
+								div
+									img(src="http://via.placeholder.com/450x280", alt="")
+						.product__slider__item
+							.product__slider__img.row.no-gutters.align-items-center
+								div
+									img(src="http://via.placeholder.com/450x280", alt="")
+					.product__thumb
+						.product__thumb__item
+							.product__thumb__img.row.no-gutters.align-items-center
+								div
+									img(src="http://via.placeholder.com/120x60", alt="")
+						.product__thumb__item
+							.product__thumb__img.row.no-gutters.align-items-center
+								div
+									img(src="http://via.placeholder.com/120x60", alt="")
+						.product__thumb__item
+							.product__thumb__img.row.no-gutters.align-items-center
+								div
+									img(src="http://via.placeholder.com/120x60", alt="")
+						.product__thumb__item
+							.product__thumb__img.row.no-gutters.align-items-center
+								div
+									img(src="http://via.placeholder.com/120x60", alt="")
+						.product__thumb__item
+							.product__thumb__img.row.no-gutters.align-items-center
+								div
+									img(src="http://via.placeholder.com/120x60", alt="")
+
+				.col-lg-6
+					h1.product__title Название товара
+					.product__info.row.no-gutters.align-items-center.justify-content-between
+						.product__articul Артикул: 	245463
+						a(href="#").btn.btn-blue Оставить отзыв
+						.social
+							a(href="#").social__item
+								i.fa.fa-instagram
+							a(href="#").social__item
+								i.fa.fa-youtube-play
+							a(href="#").social__item
+								i.fa.fa-vk
+						.rating
+							a(href="#").rating__item
+								i.fa.fa-star
+							a(href="#").rating__item
+								i.fa.fa-star
+							a(href="#").rating__item
+								i.fa.fa-star-o
+
+					.product__descr
+						p Особенности
+						p Электроусилитель руля (EPS) обеспечивает комфортную езду
+						p 4-тактный 4-цилиндровый двигатель Genesis Top Performance
+						p Уникальная система EXUP – непревзойденные крутящий момент и ускорение
+						p Подвеска Dual Shock® CK 144
+						p Легкая алюминиевая рама – жесткость и баланс
+						p 144-дюймовая (3658 мм) гусеница Camoplast® Ripsaw™
+						p Широкие лыжи
+						p Оптимальная ширина колеи лыж
+						p Инновационный дизайн обтекателей и эргономика
+						p Двойные выключатели обогрева рукояток руля и курка акселератора
+						p Ведущие звезды наружного зацепления для лучшего контакта с гусеницей
+						p Торможение двигателем, управляемое системой I.S.C.
+
+					.product__text
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta sit omnis nostrum eius pariatur quidem beatae facere quam nihil aliquam, ducimus voluptatum sequi ullam et tempore quod corporis rerum totam unde labore doloremque dicta eos deleniti hic. Ipsum, labore, fugit.
+
+					.product__footer.row.no-gutters.align-items-center.justify-content-between
+						.product__price 
+							| цена: 
+							span 2.000 
+							| руб.
+						.count
+							a.count__btn(href="#") -
+							input.count__field(type="text" value="1")
+							a.count__btn(href="#") +
+						a.btn.btn-blue.btn-blue--product-footer(href="#") Заказать
+
+			.viewed
+				h3.viewed__title Недавно просмотренные товары
+				.viewed__slider
+					.viewed__slider__item
+						include pug/partials/product-item
+					.viewed__slider__item
+						include pug/partials/product-item
+					.viewed__slider__item
+						include pug/partials/product-item
+					.viewed__slider__item
+						include pug/partials/product-item
+					.viewed__slider__item
+						include pug/partials/product-item
+					.viewed__slider__item
+						include pug/partials/product-item
+
+			include pug/partials/text-block
+
+	.manufacturer
+		include pug/partials/advantages
+
+	include pug/partials/map
+
+	include pug/partials/footer

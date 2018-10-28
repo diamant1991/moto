@@ -339,7 +339,6 @@
 
 .manufacturer {
 	margin-top: 90px;
-	padding-top: 85px;
 	text-align: center;
 	position: relative;
 	background: url(../images/manufacturer.jpg)no-repeat 50%;
@@ -360,9 +359,13 @@
 	    margin: 10px;
 	  }
 	}
+}
+
+.producer {
+	padding-top: 85px;
 
 	@include m767 {
-    padding: 30px 0;
+    padding-top: 30px;
   }
 }
 

@@ -11,9 +11,29 @@ block content
 				include pug/partials/sidebar
 
 				.content__right
+					include pug/partials/breadcrumb
+
+					.sorting.row.no-gutters.align-items-center.justify-content-between
+						.sorting__left
+							.sorting__title Сортировать по:
+							select.sorting__select
+								option Популярности
+								option Значение 2
+								option Значение 3
+							select.sorting__select
+								option Цене
+								option от дешевых
+								option от дорогих
+						.sorting__right
+							a(href="#").view-btn.view-btn--column.active
+							a(href="#").view-btn.view-btn--list
+
 					include pug/partials/products
 
-	include pug/partials/manufacturer
+					include pug/partials/pagination
+
+	.manufacturer
+		include pug/partials/advantages
 
 	include pug/partials/map
 

@@ -1,0 +1,25 @@
+.breadcrumb {
+	background: #edefeb;
+	padding: 19px 15px;
+	font-size: 11px;
+
+	li {
+		display: inline-block;
+		vertical-align: middle;
+		color: #999999;
+	}
+
+	a {
+		color: #0073be;
+		text-transform: uppercase;
+
+		&:hover {
+			border-bottom: 1px solid;
+		}
+	}
+
+	&__delimiter {
+		color: #0073be;
+		margin: 0 3px;
+	}
+}
