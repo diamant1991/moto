@@ -1,0 +1,87 @@
+.basket {
+	margin-top: 55px;
+
+	&__header {
+		text-align: center;
+
+		&__title {
+			font-size: 30px;
+			color: $color-blue;
+			text-transform: uppercase;
+			font-weight: 700;
+
+			&:after {
+				content: "";
+				display: block;
+				width: 200px;
+				height: 1px;
+				background: #e1deda;
+				margin: 10px auto;
+			}
+		}
+
+		&__text {
+			font-size: 16px;
+			color: #33394b;
+			font-weight: 600;
+		}
+	}
+
+	&__content {
+		margin-top: 30px;
+	}
+
+	&__table {
+		width: 100%;
+
+		td {
+			vertical-align: middle;
+			padding: 5px 0;
+		}
+
+		thead {
+			font-size: 18px;
+		}
+
+		tbody {
+			font-size: 18px;
+
+			td {
+				border-top: 1px solid #ececec;
+				border-bottom: 1px solid #ececec;
+				padding: 15px 10px;
+
+				&:first-child {
+					border-left: 1px solid #ececec;
+				}
+				&:last-child {
+					border-right: 1px solid #ececec;
+				}
+			}
+		}
+
+		tfoot {
+			font-size: 24px;
+			font-weight: 600;
+
+			span {
+				font-size: 48px;
+			}
+
+			td {
+				padding: 25px 10px;
+				border-bottom: 1px solid #ececec;
+
+				&:first-child {
+					text-transform: uppercase;
+					border-left: 1px solid #ececec;
+				}
+
+				&:last-child {
+					text-align: right;
+					border-right: 1px solid #ececec;
+				}
+			}
+		}
+	}
+}

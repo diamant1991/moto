@@ -1,0 +1,58 @@
+.social-scroll {
+	position: fixed;
+	z-index: 5;
+	right: 0;
+	top: 30%;
+	width: 60px;
+
+	&__btn {
+		background: $color-blue;
+		border-radius: 7px;
+		height: 68px;
+		text-align: center;
+		margin-bottom: 2px;
+		color: #fff;
+
+		.fa {
+			font-size: 24px;
+		}
+
+		&:hover {
+			background: $color-yellow;
+
+			.fa {
+				color: $color-blue;
+			}
+		}
+
+		> div {
+			width: 100%;
+		}
+
+		@include m767 {
+			height: 50px;
+		}
+	}
+
+	&__count {
+		margin: auto;
+		margin-top: 10px;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		line-height: 20px;
+		background: #999999;
+
+		@include m767 {
+			margin-top: 5px;
+			width: 15px;
+			height: 15px;
+			line-height: 15px;
+			font-size: 12px;
+		}
+	}
+
+	@include m767 {
+		width: 40px;
+	}
+}

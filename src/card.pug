@@ -5,6 +5,8 @@ append vars
 block content
 	include pug/partials/header
 
+	include pug/partials/social
+
 	.content
 		.container
 			include pug/partials/breadcrumb
@@ -54,7 +56,7 @@ block content
 								div
 									img(src="http://via.placeholder.com/120x60", alt="")
 
-				.col-lg-6
+				.col-lg-6.product__right
 					h1.product__title Название товара
 					.product__info.row.no-gutters.align-items-center.justify-content-between
 						.product__articul Артикул: 	245463

@@ -1,4 +1,6 @@
 .slider {
+	margin-bottom: 45px;
+	
 	&__item {
 		height: 645px;
 		background-repeat: no-repeat;
@@ -63,7 +65,7 @@
 }
 
 .content {
-	margin-top: 55px;
+	margin-top: 10px;
 
 	&__right {
 		width: calc(100% - 330px);

@@ -15,6 +15,12 @@
 		background: url(../images/arrow-right-blue.png)no-repeat;
 	}
 
+	&__right {
+		@include m1199 {
+			margin-top: 20px;
+		}
+	}
+
 	&__slider {
 		&__item {
 			padding-right: 1px;
@@ -29,6 +35,16 @@
 			> div {
 				width: 100%;
 			}
+
+			@include m767 {
+				height: 350px;
+				padding-left: 10px;
+				padding-right: 10px;
+
+				img {
+					max-height: 320px;
+				}
+			}
 		}
 	}
 
@@ -37,6 +53,18 @@
 		color: #33394b;
 		text-transform: uppercase;
 		font-weight: 600;
+
+		@include m1199 {
+			font-size: 28px;
+		}
+
+		@include m767 {
+			font-size: 24px;
+		}
+
+		@include m575 {
+			font-size: 20px;
+		}
 	}
 
 	&__info {
@@ -45,6 +73,10 @@
 
 	&__descr {
 		font-size: 12px;
+
+		@include m1199 {
+			margin-top: 15px;
+		}
 	}
 
 	&__text {
@@ -84,6 +116,12 @@
 	&__articul {
 		font-size: 22px;
 		color: #333;
+
+		@include m1199 {
+			font-size: 18px;
+			width: 100%;
+			margin-bottom: 15px;
+		}
 	}
 
 	&__footer {
@@ -96,6 +134,19 @@
 
 		span {
 			font-size: 39px;
+
+			@include m1199 {
+				font-size: 28px;
+			}
+		}
+
+		@include m1199 {
+			font-size: 20px;
+		}
+
+		@include m575 {
+			width: 100%;
+			margin-bottom: 20px;
 		}
 	}
 }
@@ -117,6 +168,10 @@
 		vertical-align: middle;
 		color: #333;
 		font-size: 36px;
+
+		@include m1199 {
+			font-size: 30px;
+		}
 	}
 
 	&__field {
@@ -131,6 +186,11 @@
 		font-size: 27px;
 		border: 2px solid #e4e4e4;
 		font-family: $open;
+
+		@include m1199 {
+			width: 50px;
+			font-size: 24px;
+		}
 	}
 }
 
@@ -142,6 +202,10 @@
 		font-size: 24px;
 		padding-bottom: 10px;
 		border-bottom: 1px solid rgba(69, 69, 69, 0.5);
+
+		@include m767 {
+			font-size: 20px;
+		}
 	}
 
 	&__slider {

@@ -36,6 +36,12 @@ i {
 			width: 190px;
 			font-size: 24px;
 			font-weight: 700;
+
+			@include m1199 {
+				font-size: 18px;
+				width: 145px;
+				padding: 10px;
+			}
 		}
 	}
 
@@ -52,6 +58,7 @@ i {
 
 		@include m575 {
 			font-size: 20px;
+			padding: 15px 10px;
 		}
 	}
 }
