@@ -1,0 +1,58 @@
+extends pug/base
+
+append vars
+
+block content
+	include pug/partials/header
+
+	include pug/partials/social
+
+	.content
+		.container
+			include pug/partials/breadcrumb
+
+			.cabinet
+				h1.page-title Личный кабинет
+				.cabinet__tab
+					a.cabinet__tab__item.active(href="#") Информация
+					a.cabinet__tab__item(href="#") Изменение пароля
+					a.cabinet__tab__item(href="#") Оформить заказ
+					a.cabinet__tab__item(href="#") Оставить отзыв
+
+				.cabinet__content
+					.row
+						.col-lg-4
+							.profile-photo
+								.profile-photo__item(style="background-image: url(http://via.placeholder.com/310x310)")
+								.profile-photo__text 
+									span Изменить фото
+							button.btn.btn-blue.btn-profile.btn-profile--info(type="button") Сохранить
+
+						.col-lg-7
+							.form-group.form-group--single
+								input.form-control(type="text" value="Фамилия Имя Очество")
+							.form-group.form-group--single
+								input.form-control(type="text" value="info@mail.ri")
+							.form-group.form-group--single
+								input.form-control(type="text" value="+7 098 345 43 56")
+							.form-group
+								.row
+									.col-lg-4
+										input.form-control(type="text" placeholder="Страна")
+									.col-lg-4
+										input.form-control(type="text" placeholder="Область")
+									.col-lg-4
+										input.form-control(type="text" placeholder="Индекс")
+							.form-group.form-group--single
+								input.form-control(type="text" placeholder="Город")
+							.form-group.form-group--single
+								input.form-control(type="text" placeholder="Адрес")
+
+							
+
+	.manufacturer
+		include pug/partials/advantages
+
+	include pug/partials/map
+
+	include pug/partials/footer

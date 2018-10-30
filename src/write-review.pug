@@ -1,0 +1,41 @@
+extends pug/base
+
+append vars
+
+block content
+	include pug/partials/header
+
+	include pug/partials/social
+
+
+	.content
+		.container
+			include pug/partials/breadcrumb
+
+			.cabinet
+				h1.page-title Личный кабинет
+				.cabinet__tab
+					a.cabinet__tab__item.active(href="#") Информация
+					a.cabinet__tab__item(href="#") Изменение пароля
+					a.cabinet__tab__item(href="#") Оформить заказ
+					a.cabinet__tab__item(href="#") Оставить отзыв
+
+				.cabinet__content
+					.cabinet__content__review
+						.form-group
+							select.select-profile
+								option Выбрать товар из ранее заказаных
+								option Значение 1
+								option Значение 2
+						.form-group
+							textarea.form-control(placeholder="Коментарий")
+						.form-group.form-group--submit
+							button.btn.btn-blue.btn-profile.btn-profile--center(type="submit") Сохранить
+
+
+	.manufacturer
+		include pug/partials/advantages
+
+	include pug/partials/map
+
+	include pug/partials/footer

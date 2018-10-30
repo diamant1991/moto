@@ -14,48 +14,53 @@ block content
 			.basket
 				.basket__header
 					.basket__header__close
-					.basket__header__title Спасибо за заказ!
+					.basket__header__title 
+						| Спасибо за заказ!
+						a.basket__header__delete(href="#")
 					.basket__header__text В ближайшее время наши менеджеры свяжутся с Вами
 
 				.basket__content
-					table.basket__table
-						thead
-							tr
-								td &nbsp;
-								td Артикул
-								td(colspan="2") &nbsp;
-								td Количество
-								td Стоимость
-						tfoot
-							td(colspan="3") Итоговая сумма покупки:
-							td(colspan="3") 
-								span 600.000 
-								| руб.
-						tbody
-							tr
-								td
-									img(src="http://via.placeholder.com/120x75", alt="")
-								td 245678
-								td  Lorem ipsum dolor sit amet.
-								td 2 000 руб.
-								td 
-									.count.count--basket
-										a.count__btn(href="#") -
-										input.count__field(type="text" value="1")
-										a.count__btn(href="#") +
-								td 20 000 руб.
-							tr
-								td
-									img(src="http://via.placeholder.com/120x75", alt="")
-								td 245678
-								td  Lorem ipsum dolor sit amet.
-								td 2 000 руб.
-								td 
-									.count.count--basket
-										a.count__btn(href="#") -
-										input.count__field(type="text" value="1")
-										a.count__btn(href="#") +
-								td 20 000 руб.
+					.basket__wrapp
+						table.basket__table
+							thead
+								tr
+									td &nbsp;
+									td Артикул
+									td(colspan="2") &nbsp;
+									td Количество
+									td Стоимость
+							tfoot
+								td(colspan="3") Итоговая сумма покупки:
+								td(colspan="3") 
+									span 600.000 
+									| руб.
+							tbody
+								tr
+									td
+										img(src="http://via.placeholder.com/120x75", alt="")
+									td 245678
+									td  Lorem ipsum dolor sit amet.
+									td 2 000 руб.
+									td 
+										.count.count--basket
+											a.count__btn(href="#") -
+											input.count__field(type="text" value="1")
+											a.count__btn(href="#") +
+									td 20 000 руб.
+								tr
+									td
+										img(src="http://via.placeholder.com/120x75", alt="")
+									td 245678
+									td  Lorem ipsum dolor sit amet.
+									td 2 000 руб.
+									td 
+										.count.count--basket
+											a.count__btn(href="#") -
+											input.count__field(type="text" value="1")
+											a.count__btn(href="#") +
+									td 20 000 руб.
+					.basket__footer
+						a(href="#").btn.btn-blue.btn-basket Оформить заказ
 
 	.manufacturer
 		include pug/partials/advantages

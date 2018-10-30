@@ -5,10 +5,12 @@
 		text-align: center;
 
 		&__title {
+			display: inline-block;
 			font-size: 30px;
 			color: $color-blue;
 			text-transform: uppercase;
 			font-weight: 700;
+			position: relative;
 
 			&:after {
 				content: "";
@@ -18,12 +20,36 @@
 				background: #e1deda;
 				margin: 10px auto;
 			}
+
+			@include m991 {
+				font-size: 24px;
+			}
 		}
 
 		&__text {
 			font-size: 16px;
 			color: #33394b;
 			font-weight: 600;
+
+			@include m991 {
+				font-size: 14px;
+			}
+		}
+
+		&__delete {
+			position: absolute;
+			z-index: 2;
+			right: -75px;
+			top: -40px;
+			width: 18px;
+			height: 18px;
+			background: url(../images/close.png)no-repeat;
+		}
+	}
+
+	&__wrapp {
+		@include m991 {
+			overflow: auto;
 		}
 	}
 
@@ -41,6 +67,10 @@
 
 		thead {
 			font-size: 18px;
+
+			@include m991 {
+				font-size: 14px;
+			}
 		}
 
 		tbody {
@@ -58,6 +88,10 @@
 					border-right: 1px solid #ececec;
 				}
 			}
+
+			@include m991 {
+				font-size: 14px;
+			}
 		}
 
 		tfoot {
@@ -66,6 +100,10 @@
 
 			span {
 				font-size: 48px;
+
+				@include m991 {
+					font-size: 24px;
+				}
 			}
 
 			td {
@@ -82,6 +120,31 @@
 					border-right: 1px solid #ececec;
 				}
 			}
+
+			@include m991 {
+				font-size: 18px;
+			}
 		}
+
+		@include m991 {
+			width: 730px;
+		}
+	}
+
+	&__footer {
+		margin-top: 20px;
+		text-align: right;
+	}
+}
+
+.btn-basket {
+	width: 315px;
+	padding: 20px 15px;
+	font-size: 24px;
+	text-transform: uppercase;
+
+	@include m991 {
+		width: 240px;
+    font-size: 18px;
 	}
 }

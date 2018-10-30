@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="css/main.css?v=1540906188633">
+		<link rel="stylesheet" href="css/main.css?v=1540906191776">
 	</head>
 	<body>
 		<header class="header">
@@ -82,58 +82,25 @@
 					<li><a href="#">КАТАЛОГ</a><span class="breadcrumb__delimiter">/</span></li>
 					<li>Снегоходы</li>
 				</ul>
-				<div class="basket">
-					<div class="basket__header">
-						<div class="basket__header__close"></div>
-						<div class="basket__header__title">
-							 Спасибо за заказ!<a class="basket__header__delete" href="#"></a></div>
-						<div class="basket__header__text">В ближайшее время наши менеджеры свяжутся с Вами</div>
-					</div>
-					<div class="basket__content">
-						<div class="basket__wrapp">
-							<table class="basket__table">
-								<thead>
-									<tr>
-										<td>&nbsp;</td>
-										<td>Артикул</td>
-										<td colspan="2">&nbsp;</td>
-										<td>Количество</td>
-										<td>Стоимость</td>
-									</tr>
-								</thead>
-								<tfoot>
-									<td colspan="3">Итоговая сумма покупки:</td>
-									<td colspan="3"> <span>600.000 </span>руб.</td>
-								</tfoot>
-								<tbody>
-									<tr>
-										<td><img src="http://via.placeholder.com/120x75" alt=""></td>
-										<td>245678</td>
-										<td> Lorem ipsum dolor sit amet.</td>
-										<td>2 000 руб.</td>
-										<td> 
-											<div class="count count--basket"><a class="count__btn" href="#">-</a>
-												<input class="count__field" type="text" value="1"><a class="count__btn" href="#">+</a>
-											</div>
-										</td>
-										<td>20 000 руб.</td>
-									</tr>
-									<tr>
-										<td><img src="http://via.placeholder.com/120x75" alt=""></td>
-										<td>245678</td>
-										<td> Lorem ipsum dolor sit amet.</td>
-										<td>2 000 руб.</td>
-										<td> 
-											<div class="count count--basket"><a class="count__btn" href="#">-</a>
-												<input class="count__field" type="text" value="1"><a class="count__btn" href="#">+</a>
-											</div>
-										</td>
-										<td>20 000 руб.</td>
-									</tr>
-								</tbody>
-							</table>
+				<div class="cabinet">
+					<h1 class="page-title">Личный кабинет</h1>
+					<div class="cabinet__tab"><a class="cabinet__tab__item active" href="#">Информация</a><a class="cabinet__tab__item" href="#">Изменение пароля</a><a class="cabinet__tab__item" href="#">Оформить заказ</a><a class="cabinet__tab__item" href="#">Оставить отзыв</a></div>
+					<div class="cabinet__content">
+						<div class="cabinet__content__review">
+							<div class="form-group">
+								<select class="select-profile">
+									<option>Выбрать товар из ранее заказаных</option>
+									<option>Значение 1</option>
+									<option>Значение 2</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" placeholder="Коментарий"></textarea>
+							</div>
+							<div class="form-group form-group--submit">
+								<button class="btn btn-blue btn-profile btn-profile--center" type="submit">Сохранить</button>
+							</div>
 						</div>
-						<div class="basket__footer"><a class="btn btn-blue btn-basket" href="#">Оформить заказ</a></div>
 					</div>
 				</div>
 			</div>
