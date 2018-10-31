@@ -88,12 +88,20 @@ textarea.form-control {
 .form-group {
 	margin-bottom: 25px;
 
+	&__info {
+		font-size: 24px;
+	}
+
 	&--single {
 		padding-right: 150px;
 	}
 
 	&--submit {
 		text-align: center;
+	}
+
+	&--right {
+		text-align: right;
 	}
 }
 
@@ -137,4 +145,118 @@ textarea.form-control {
 
 .select-profile::-ms-expand {
   display: none;
+}
+
+.order-table {
+	width: 100%;
+
+	td {
+		vertical-align: middle;
+	}
+
+	thead {
+		text-align: center;
+		font-size: 22px;
+		font-weight: 600;
+		text-transform: uppercase;
+
+		td {
+			padding: 15px 0;
+		}
+	}
+
+	&__title {
+		text-align: center;
+		cursor: pointer;
+
+		td {
+			position: relative;
+			background: $color-blue;
+			color: #fff;
+			padding: 10px 0;
+			font-size: 20px;
+			border-bottom: 2px solid #fff;
+		}
+
+		&.active {
+			.order-show {
+				transform: translate(0, -50%) rotate(-90deg);
+				color: #353637;
+			}
+		}
+	}
+
+	&__content {
+		font-size: 16px;
+		opacity: 0;
+    visibility: collapse;
+
+    &.is-active {
+    	opacity: 1;
+    	visibility: visible;
+    }
+
+		td {
+			padding: 10px;
+
+			&:last-child {
+				text-align: center;
+			}
+		}
+	}
+}
+
+.order-btn {
+	display: block;
+	margin: auto;
+	width: 125px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	border-radius: 3px;
+	font-size: 14px;
+	cursor: pointer;
+
+	&--complete {
+		color: #fff;
+		background: #289548;
+	}
+
+	&--pay {
+		color: #333;
+		background: #b6d8ee;
+	}
+}
+
+.order-show {
+	position: absolute;
+	z-index: 2;
+	right: 10px;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 24px;
+}
+
+.order-download {
+	margin-top: 10px;
+	text-align: right;
+	font-size: 19px;
+
+	&__btn {
+		color: #353637;
+	}
+
+	&__text {
+		border-bottom: 1px solid;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	&__icon {
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 10px;
+		position: relative;
+		top: 3px;
+	}
 }

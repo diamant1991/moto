@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="css/main.css?v=1540991519666">
+		<link rel="stylesheet" href="css/main.css?v=1540995257040">
 	</head>
 	<body>
 		<header class="header">
@@ -82,24 +82,111 @@
 					<li><a href="#">КАТАЛОГ</a><span class="breadcrumb__delimiter">/</span></li>
 					<li>Снегоходы</li>
 				</ul>
-				<div class="cabinet">
-					<h1 class="page-title">Личный кабинет</h1>
-					<div class="cabinet__tab"><a class="cabinet__tab__item active" href="#">Информация</a><a class="cabinet__tab__item" href="#">Изменение пароля</a><a class="cabinet__tab__item" href="#">Оформить заказ</a><a class="cabinet__tab__item" href="#">Оставить отзыв</a></div>
-					<div class="cabinet__content">
-						<div class="cabinet__content__review">
+				<div class="delivery">
+					<h1 class="page-title">Оплата и доставка</h1>
+					<form>
+						<div class="delivery__line">
+							<div class="delivery__title">Адрес доставки</div>
+							<div class="delivery__line__content">
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="form-group">
+											<input class="form-control" type="text" placeholder="Фамилия Имя Отчество">
+										</div>
+										<div class="form-group">
+											<input class="form-control" type="text" placeholder="mail">
+										</div>
+										<div class="form-group">
+											<input class="form-control" type="text" placeholder="+7 (___) ___ __ __">
+										</div>
+										<div class="form-group">
+											<input class="checkbox" id="check" type="checkbox">
+											<label for="check">Уведомляйте меня об интересных событиях, акциях и скидках</label>
+										</div>
+										<div class="form-group">
+											<input class="checkbox" id="check2" type="checkbox">
+											<label for="check2">Сохранить эти данные чтобы не тратить время в следующий раз</label>
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-group row">
+											<div class="col-lg-4">
+												<input class="form-control" type="text" placeholder="Страна">
+											</div>
+											<div class="col-lg-4">
+												<input class="form-control" type="text" placeholder="Область">
+											</div>
+											<div class="col-lg-4">
+												<input class="form-control" type="text" placeholder="Индекс">
+											</div>
+										</div>
+										<div class="form-group row">
+											<div class="col-lg-9">
+												<input class="form-control" type="text" placeholder="Город">
+											</div>
+										</div>
+										<div class="form-group row">
+											<div class="col-lg-9">
+												<input class="form-control" type="text" placeholder="Адрес">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+					<div class="delivery__line">
+						<div class="delivery__title">Доставка</div>
+						<div class="delivery__line__content">
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="form-group">
+										<input class="checkbox" id="check3" type="checkbox">
+										<label for="check3">Бесплатная доставка</label>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="form-group">
+										<input class="checkbox" id="check4" type="checkbox">
+										<label for="check4">Самовывоз (motocityk: Москва 14)</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="delivery__line">
+						<div class="delivery__title">Способ оплаты</div>
+						<div class="delivery__line__content">
 							<div class="form-group">
-								<select class="select-profile">
-									<option>Выбрать товар из ранее заказаных</option>
-									<option>Значение 1</option>
-									<option>Значение 2</option>
-								</select>
+								<input class="checkbox" id="check5" type="checkbox">
+								<label for="check5">Оплата наличными или картой курьеру при получении заказа</label>
 							</div>
 							<div class="form-group">
-								<textarea class="form-control" placeholder="Коментарий"></textarea>
+								<input class="checkbox" id="check6" type="checkbox">
+								<label for="check6">Оплата счета картой Visa и Mastercard по ссылке</label>
 							</div>
-							<div class="form-group form-group--submit">
-								<button class="btn btn-blue btn-profile btn-profile--center" type="submit">Сохранить</button>
+							<div class="form-group">
+								<input class="checkbox" id="check7" type="checkbox">
+								<label for="check7">Электронные деньги: Яндекс деньги, Киви, ВэбМани</label>
 							</div>
+						</div>
+					</div>
+					<div class="delivery__line">
+						<div class="delivery__title">Адрес для выставления счетов</div>
+						<div class="delivery__line__content">
+							<div class="form-group">
+								<input class="checkbox" id="check8" type="checkbox">
+								<label for="check8">Тот же что и адрес доставки</label>
+							</div>
+							<div class="form-group">
+								<input class="checkbox" id="check9" type="checkbox">
+								<label for="check9">Использовать другой адрес для выставления счетов</label>
+							</div>
+						</div>
+					</div>
+					<div class="delivery__line">
+						<div class="form-group form-group--submit">
+							<button class="btn btn-blue btn-profile btn-profile--center" type="submit">Завершить заказ</button>
 						</div>
 					</div>
 				</div>

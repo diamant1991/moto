@@ -1,0 +1,41 @@
+extends pug/base
+
+append vars
+
+block content
+	include pug/partials/header
+
+	include pug/partials/social
+
+	.content
+		.container
+			.register.row.no-gutters.justify-content-between
+				.col-lg-5
+					.form-title Регистрация
+					.form-group
+						input.form-control(type="text" placeholder="Фамилия Имя Очество")
+					.form-group
+						input.form-control(type="text" placeholder="mail")
+					.form-group
+						input.form-control(type="text" placeholder="Пароль")
+					.form-group.form-group--register-submit
+						button.btn.btn-blue.btn-profile.btn-full(type="submit") Зарегестрироваться
+
+				.col-lg-5
+					.form-title Вход
+					.form-group
+						input.form-control(type="text" placeholder="Логин")
+					.form-group
+						input.form-control(type="password" placeholder="Пароль")
+					.form-group.form-group--register-submit
+						button.btn.btn-blue.btn-profile.btn-full(type="submit") Войти
+					.form-group.form-group__link
+						a.form-group__link__item(href="#") Регистрация
+
+
+	.manufacturer
+		include pug/partials/advantages
+
+	include pug/partials/map
+
+	include pug/partials/footer

@@ -1,0 +1,26 @@
+.register {
+	margin-top: 50px;
+}
+
+.form-title {
+	font-size: 24px;
+	font-weight: 700;
+	color: #7b7a7a;
+	text-transform: uppercase;
+	margin-bottom: 45px;
+	text-align: center;
+}
+
+.form-group--register-submit {
+	padding: 0 35px;
+}
+
+.form-group__link {
+	text-align: center;
+	&__item {
+		font-size: 24px;
+		color: #7b7a7a;
+		font-weight: 600;
+		border-bottom: 1px solid;
+	}
+}

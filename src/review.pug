@@ -1,0 +1,80 @@
+extends pug/base
+
+append vars
+
+block content
+	include pug/partials/header
+
+	include pug/partials/social
+
+	.content
+		.container
+			include pug/partials/breadcrumb
+			.review
+				h1.page-title Отзывы
+
+				.review__content.row
+					.col-lg-6
+						.review__item
+							.review__item__content.row.no-gutters.justify-content-between
+								.review__img
+								.review__descr
+									.review__autor
+										span.review__autor__black Alex:
+										span.review__autor__blue  Мотор Кавасаки
+									.review__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, enim ipsum quaerat voluptas facere provident similique dolore neque doloremque ratione maxime repudiandae consequatur non, quis. Illo laborum, ad distinctio pariatur!
+									.review__date
+										.review__date__icon
+											img(src="images/calendar-big.png", alt="")
+										.review__date__info 15.09.2017
+					.col-lg-6
+						.review__item
+							.review__item__content.row.no-gutters.justify-content-between
+								.review__img
+								.review__descr
+									.review__autor
+										span.review__autor__black Alex:
+										span.review__autor__blue  Мотор Кавасаки
+									.review__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, enim ipsum quaerat voluptas facere provident similique dolore neque doloremque ratione maxime repudiandae consequatur non, quis. Illo laborum, ad distinctio pariatur!
+									.review__date
+										.review__date__icon
+											img(src="images/calendar-big.png", alt="")
+										.review__date__info 15.09.2017
+					.col-lg-6
+						.review__item
+							.review__item__content.row.no-gutters.justify-content-between
+								.review__img
+								.review__descr
+									.review__autor
+										span.review__autor__black Alex:
+										span.review__autor__blue  Мотор Кавасаки
+									.review__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, enim ipsum quaerat voluptas facere provident similique dolore neque doloremque ratione maxime repudiandae consequatur non, quis. Illo laborum, ad distinctio pariatur!
+									.review__date
+										.review__date__icon
+											img(src="images/calendar-big.png", alt="")
+										.review__date__info 15.09.2017
+					.col-lg-6
+						.review__item
+							.review__item__content.row.no-gutters.justify-content-between
+								.review__img
+								.review__descr
+									.review__autor
+										span.review__autor__black Alex:
+										span.review__autor__blue  Мотор Кавасаки
+									.review__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, enim ipsum quaerat voluptas facere provident similique dolore neque doloremque ratione maxime repudiandae consequatur non, quis. Illo laborum, ad distinctio pariatur!
+									.review__date
+										.review__date__icon
+											img(src="images/calendar-big.png", alt="")
+										.review__date__info 15.09.2017
+
+				.form-group.form-group--submit
+					a.btn.btn-blue.btn-profile.btn-profile--center(href="#") Смотреть еще
+
+
+
+	.manufacturer
+		include pug/partials/advantages
+
+	include pug/partials/map
+
+	include pug/partials/footer

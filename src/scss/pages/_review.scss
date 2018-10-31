@@ -1,0 +1,68 @@
+.review {
+	margin-top: 40px;
+
+	&__content {
+		margin-bottom: 50px;
+	}
+
+	&__item {
+		margin-bottom: 15px;
+		padding: 20px 30px;
+		background: #f1f1f1;
+
+		&__content {
+			border-bottom: 2px solid #73b4df;
+			padding-bottom: 15px;
+		}
+	}
+
+	&__img {
+		width: 112px;
+		height: 112px;
+		background-color: #d7d7d7;
+	}
+
+	&__descr {
+		width: calc(100% - 140px);
+	}
+
+	&__autor {
+		&__blue {
+			font-size: 24px;
+			color: $color-blue;
+		}
+
+		&__black {
+			font-size: 23px;
+			color: #3c3f42;
+			font-weight: 700;
+		}
+	}
+
+	&__text {
+		margin-top: 10px;
+		font-size: 13px;
+		font-style: italic;
+		line-height: 1.4;
+	}
+
+	&__date {
+		margin-top: 10px;
+		text-align: right;
+
+		&__icon {
+			display: inline-block;
+			vertical-align: middle;
+			position: relative;
+			top: 1px;
+		}
+
+		&__info {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 20px;
+			color: #4e5f70;
+			margin-left: 5px;
+		}
+	}
+}

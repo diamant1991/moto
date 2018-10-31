@@ -1,0 +1,97 @@
+extends pug/base
+
+append vars
+
+block content
+	include pug/partials/header
+
+	include pug/partials/social
+
+	.content
+		.container
+			include pug/partials/breadcrumb
+			
+			.delivery
+				h1.page-title Оплата и доставка
+
+				form
+					.delivery__line
+						.delivery__title Адрес доставки
+						.delivery__line__content
+							.row
+								.col-lg-6
+									.form-group
+										input.form-control(type="text" placeholder="Фамилия Имя Отчество")
+									.form-group
+										input.form-control(type="text" placeholder="mail")
+									.form-group
+										input.form-control(type="text" placeholder="+7 (___) ___ __ __")
+									.form-group
+										input.checkbox#check(type="checkbox")
+										label(for="check") Уведомляйте меня об интересных событиях, акциях и скидках
+									.form-group
+										input.checkbox#check2(type="checkbox")
+										label(for="check2") Сохранить эти данные чтобы не тратить время в следующий раз
+								.col-lg-6
+									.form-group.row
+										.col-lg-4
+											input.form-control(type="text" placeholder="Страна")
+										.col-lg-4
+											input.form-control(type="text" placeholder="Область")
+										.col-lg-4
+											input.form-control(type="text" placeholder="Индекс")
+									.form-group.row
+										.col-lg-9
+											input.form-control(type="text" placeholder="Город")
+									.form-group.row
+										.col-lg-9
+											input.form-control(type="text" placeholder="Адрес")
+
+				.delivery__line
+						.delivery__title Доставка
+						.delivery__line__content
+							.row
+								.col-lg-3
+									.form-group
+										input.checkbox#check3(type="checkbox")
+										label(for="check3") Бесплатная доставка
+								.col-lg-4
+									.form-group
+										input.checkbox#check4(type="checkbox")
+										label(for="check4") Самовывоз (motocityk: Москва 14)
+
+				.delivery__line
+						.delivery__title Способ оплаты
+						.delivery__line__content
+							.form-group
+								input.checkbox#check5(type="checkbox")
+								label(for="check5") Оплата наличными или картой курьеру при получении заказа
+							.form-group
+								input.checkbox#check6(type="checkbox")
+								label(for="check6") Оплата счета картой Visa и Mastercard по ссылке
+							.form-group
+								input.checkbox#check7(type="checkbox")
+								label(for="check7") Электронные деньги: Яндекс деньги, Киви, ВэбМани
+
+				.delivery__line
+						.delivery__title Адрес для выставления счетов
+						.delivery__line__content
+							.form-group
+								input.checkbox#check8(type="checkbox")
+								label(for="check8") Тот же что и адрес доставки
+							.form-group
+								input.checkbox#check9(type="checkbox")
+								label(for="check9") Использовать другой адрес для выставления счетов
+
+				.delivery__line
+					.form-group.form-group--submit
+						button.btn.btn-blue.btn-profile.btn-profile--center(type="submit") Завершить заказ
+								
+
+
+	.manufacturer
+		include pug/partials/advantages
+
+	include pug/partials/map
+
+	include pug/partials/footer

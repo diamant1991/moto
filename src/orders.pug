@@ -1,0 +1,90 @@
+extends pug/base
+
+append vars
+
+block content
+	include pug/partials/header
+
+	include pug/partials/social
+
+	.content
+		.container
+			include pug/partials/breadcrumb
+
+			.cabinet
+				h1.page-title Личный кабинет
+				.cabinet__tab
+					a.cabinet__tab__item.active(href="#") Информация
+					a.cabinet__tab__item(href="#") Изменение пароля
+					a.cabinet__tab__item(href="#") Оформить заказ
+					a.cabinet__tab__item(href="#") Оставить отзыв
+
+				.cabinet__content
+					table.order-table
+						thead
+							tr
+								td(colspan="2") Номер Заказа
+								td Дата
+								td(colspan="3") Статус
+								td Сумма
+						tbody
+							tr.order-table__title(data-number="1")
+								td(colspan="2") 1
+								td 24.08.2017
+								td(colspan="3") Обрабатывается
+								td 
+									| 200.000 руб
+									.order-show
+										i.fa.fa-angle-down
+							tr.order-table__content.order-table__content1
+								td
+									img(src="http://via.placeholder.com/55x31", alt="")
+								td 245463
+								td Lorem ipsum dolor dolor 
+								td 2.000 руб.
+								td 10 ШТ.
+								td 200.000 руб.
+								td
+									span.order-btn.order-btn--complete Оплачено
+							tr.order-table__content.order-table__content1
+								td
+									img(src="http://via.placeholder.com/55x31", alt="")
+								td 245463
+								td Lorem ipsum dolor dolor 
+								td 2.000 руб.
+								td 10 ШТ.
+								td 200.000 руб.
+								td
+									span.order-btn.order-btn--pay Оплатить
+
+							tr.order-table__title(data-number="2")
+								td(colspan="2") 2
+								td 24.08.2017
+								td(colspan="3") Отправлен
+								td 
+									| 200.000 руб
+									.order-show
+										i.fa.fa-angle-down
+							tr.order-table__content.order-table__content2
+								td
+									img(src="http://via.placeholder.com/55x31", alt="")
+								td 245463
+								td Lorem ipsum dolor dolor 
+								td 2.000 руб.
+								td 10 ШТ.
+								td 200.000 руб.
+								td
+									span.order-btn.order-btn--pay Оплатить
+
+					.order-download
+						a.order-download__btn(href="#")
+							span.order-download__text Скачать Excel
+							span.order-download__icon
+								img(src="images/excel.png", alt="")
+
+	.manufacturer
+		include pug/partials/advantages
+
+	include pug/partials/map
+
+	include pug/partials/footer

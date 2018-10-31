@@ -79,3 +79,16 @@ $('.viewed__slider').slick({
     }
   ]
 });
+
+$('.order-table__title').click(function(e) {
+  var num = $(this).attr('data-number');
+  var row = $('.order-table__content' + num);
+
+  if(!row.hasClass('is-active')){
+    $(this).addClass('active')
+    row.addClass('is-active')
+  } else {
+    $(this).removeClass('active')
+    row.removeClass('is-active')
+  }
+});
