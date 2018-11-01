@@ -26,26 +26,27 @@ block content
 										input.form-control(type="text" placeholder="mail")
 									.form-group
 										input.form-control(type="text" placeholder="+7 (___) ___ __ __")
-									.form-group
-										input.checkbox#check(type="checkbox")
-										label(for="check") Уведомляйте меня об интересных событиях, акциях и скидках
-									.form-group
-										input.checkbox#check2(type="checkbox")
-										label(for="check2") Сохранить эти данные чтобы не тратить время в следующий раз
 								.col-lg-6
 									.form-group.row
-										.col-lg-4
-											input.form-control(type="text" placeholder="Страна")
-										.col-lg-4
-											input.form-control(type="text" placeholder="Область")
-										.col-lg-4
-											input.form-control(type="text" placeholder="Индекс")
+										.col-sm-4
+											input.form-control.form-control--small(type="text" placeholder="Страна")
+										.col-sm-4
+											input.form-control.form-control--small(type="text" placeholder="Область")
+										.col-sm-4
+											input.form-control.form-control--small(type="text" placeholder="Индекс")
 									.form-group.row
 										.col-lg-9
 											input.form-control(type="text" placeholder="Город")
 									.form-group.row
 										.col-lg-9
 											input.form-control(type="text" placeholder="Адрес")
+								.col-lg-6
+									.form-group
+										input.checkbox#check(type="checkbox")
+										label(for="check") Уведомляйте меня об интересных событиях, акциях и скидках
+									.form-group
+										input.checkbox#check2(type="checkbox")
+										label(for="check2") Сохранить эти данные чтобы не тратить время в следующий раз
 
 				.delivery__line
 						.delivery__title Доставка
@@ -95,3 +96,5 @@ block content
 	include pug/partials/map
 
 	include pug/partials/footer
+
+	include pug/partials/top-btn

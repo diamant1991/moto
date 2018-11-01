@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="css/main.css?v=1540991518184">
+		<link rel="stylesheet" href="css/main.css?v=1541053968151">
 	</head>
 	<body>
 		<header class="header">
@@ -86,63 +86,65 @@
 					<h1 class="page-title">Личный кабинет</h1>
 					<div class="cabinet__tab"><a class="cabinet__tab__item active" href="#">Информация</a><a class="cabinet__tab__item" href="#">Изменение пароля</a><a class="cabinet__tab__item" href="#">Оформить заказ</a><a class="cabinet__tab__item" href="#">Оставить отзыв</a></div>
 					<div class="cabinet__content">
-						<table class="order-table">
-							<thead>
-								<tr>
-									<td colspan="2">Номер Заказа</td>
-									<td>Дата</td>
-									<td colspan="3">Статус</td>
-									<td>Сумма</td>
-								</tr>
-							</thead>
-							<tbody>
-								<tr class="order-table__title" data-number="1">
-									<td colspan="2">1</td>
-									<td>24.08.2017</td>
-									<td colspan="3">Обрабатывается</td>
-									<td>
-										 200.000 руб
-										<div class="order-show"><i class="fa fa-angle-down"></i></div>
-									</td>
-								</tr>
-								<tr class="order-table__content order-table__content1">
-									<td><img src="http://via.placeholder.com/55x31" alt=""></td>
-									<td>245463</td>
-									<td>Lorem ipsum dolor dolor </td>
-									<td>2.000 руб.</td>
-									<td>10 ШТ.</td>
-									<td>200.000 руб.</td>
-									<td><span class="order-btn order-btn--complete">Оплачено</span></td>
-								</tr>
-								<tr class="order-table__content order-table__content1">
-									<td><img src="http://via.placeholder.com/55x31" alt=""></td>
-									<td>245463</td>
-									<td>Lorem ipsum dolor dolor </td>
-									<td>2.000 руб.</td>
-									<td>10 ШТ.</td>
-									<td>200.000 руб.</td>
-									<td><span class="order-btn order-btn--pay">Оплатить</span></td>
-								</tr>
-								<tr class="order-table__title" data-number="2">
-									<td colspan="2">2</td>
-									<td>24.08.2017</td>
-									<td colspan="3">Отправлен</td>
-									<td>
-										 200.000 руб
-										<div class="order-show"><i class="fa fa-angle-down"></i></div>
-									</td>
-								</tr>
-								<tr class="order-table__content order-table__content2">
-									<td><img src="http://via.placeholder.com/55x31" alt=""></td>
-									<td>245463</td>
-									<td>Lorem ipsum dolor dolor </td>
-									<td>2.000 руб.</td>
-									<td>10 ШТ.</td>
-									<td>200.000 руб.</td>
-									<td><span class="order-btn order-btn--pay">Оплатить</span></td>
-								</tr>
-							</tbody>
-						</table>
+						<div class="overflow-table">
+							<table class="order-table">
+								<thead>
+									<tr>
+										<td colspan="2">Номер Заказа</td>
+										<td>Дата</td>
+										<td colspan="3">Статус</td>
+										<td>Сумма</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="order-table__title" data-number="1">
+										<td colspan="2">1</td>
+										<td>24.08.2017</td>
+										<td colspan="3">Обрабатывается</td>
+										<td>
+											 200.000 руб
+											<div class="order-show"><i class="fa fa-angle-down"></i></div>
+										</td>
+									</tr>
+									<tr class="order-table__content order-table__content1">
+										<td><img src="http://via.placeholder.com/55x31" alt=""></td>
+										<td>245463</td>
+										<td>Lorem ipsum dolor dolor </td>
+										<td>2.000 руб.</td>
+										<td>10 ШТ.</td>
+										<td>200.000 руб.</td>
+										<td><span class="order-btn order-btn--complete">Оплачено</span></td>
+									</tr>
+									<tr class="order-table__content order-table__content1">
+										<td><img src="http://via.placeholder.com/55x31" alt=""></td>
+										<td>245463</td>
+										<td>Lorem ipsum dolor dolor </td>
+										<td>2.000 руб.</td>
+										<td>10 ШТ.</td>
+										<td>200.000 руб.</td>
+										<td><span class="order-btn order-btn--pay">Оплатить</span></td>
+									</tr>
+									<tr class="order-table__title" data-number="2">
+										<td colspan="2">2</td>
+										<td>24.08.2017</td>
+										<td colspan="3">Отправлен</td>
+										<td>
+											 200.000 руб
+											<div class="order-show"><i class="fa fa-angle-down"></i></div>
+										</td>
+									</tr>
+									<tr class="order-table__content order-table__content2">
+										<td><img src="http://via.placeholder.com/55x31" alt=""></td>
+										<td>245463</td>
+										<td>Lorem ipsum dolor dolor </td>
+										<td>2.000 руб.</td>
+										<td>10 ШТ.</td>
+										<td>200.000 руб.</td>
+										<td><span class="order-btn order-btn--pay">Оплатить</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 						<div class="order-download"><a class="order-download__btn" href="#"><span class="order-download__text">Скачать Excel</span><span class="order-download__icon"><img src="images/excel.png" alt=""></span></a></div>
 					</div>
 				</div>
@@ -250,6 +252,7 @@
 				</div>
 			</div>
 		</footer>
+		<button class="top-btn" type="button"></button>
 		<script src="js/library/jquery-3.3.1.min.js"></script>
 		<script src="js/library/slick/slick.min.js"></script>
 		<script src="js/script.js"></script>

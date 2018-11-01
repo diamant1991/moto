@@ -24,6 +24,32 @@
 				border: 1px solid #ededed;
 				border-top: 10px solid $color-blue;
 			}
+
+			@media (max-width: 1399px) {
+				width: 245px;
+			}
+
+			@include m1199 {
+				font-size: 16px;
+				width: 205px;
+				height: 65px;
+				line-height: 50px;
+			}
+
+			@include m991 {
+				width: 100%;
+				margin: 10px 0;
+				line-height: 1;
+				height: auto;
+				padding: 15px 10px;
+				border-radius: 0;
+				border: 0 !important; 
+
+				&.active {
+					background: $color-blue;
+					color: #fff;
+				}
+			}
 		}
 	}
 
@@ -33,6 +59,15 @@
 
 		&__review {
 			padding-top: 60px;
+
+			@include m575 {
+				padding-top: 20px;
+			}
+		}
+
+		@include m1199 {
+			padding-left: 0;
+			padding-right: 0;
 		}
 	}
 }
@@ -64,6 +99,19 @@
 			cursor: pointer;
 			border-bottom: 1px solid;
 		}
+
+		@include m767 {
+			font-size: 16px;
+		}
+	}
+
+	@include m1199 {
+		max-width: 310px;
+	}
+
+	@include m767 {
+		font-size: 16px;
+		margin-bottom: 20px;
 	}
 }
 
@@ -77,12 +125,34 @@
 	font-size: 24px;
 	color: #333;
 	border: 1px solid #c1c1c1;
+
+	@include m991 {
+		font-size: 20px;
+		height: 45px;
+	}
+
+	@include m767 {
+		font-size: 18px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	@include m575 {
+		&--small {
+			margin-bottom: 20px;
+		}
+	}
 }
 
 textarea.form-control {
 	padding: 10px 30px;
 	height: 235px;
 	resize: none;
+
+	@include m767 {
+		padding: 15px;
+		height: 200px;
+	}
 }
 
 .form-group {
@@ -90,10 +160,32 @@ textarea.form-control {
 
 	&__info {
 		font-size: 24px;
+
+		@include m991 {
+			font-size: 20px;
+		}
+
+		@include m767 {
+			font-size: 18px;
+		}
+	}
+
+	&__col {
+		@include m991 {
+			margin-bottom: 20px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
 	}
 
 	&--single {
 		padding-right: 150px;
+
+		@include m991 {
+			padding-right: 0;
+		}
 	}
 
 	&--submit {
@@ -117,10 +209,30 @@ textarea.form-control {
 	&--info {
 		margin-top: 77px;
 		width: 100%;
+
+		@include m767 {
+			margin-top: 30px;
+		}
 	}
 
 	&--center {
 		width: 315px;
+
+		@include m991 {
+			width: 270px;
+		}
+
+		@include m767 {
+			width: 240px;
+		}
+	}
+
+	@include m991 {
+		font-size: 20px;
+	}
+
+	@include m767 {
+		font-size: 18px;
 	}
 }
 
@@ -141,6 +253,12 @@ textarea.form-control {
   text-overflow: '';
   -ms-appearance: none;
   appearance: none!important;
+
+  @include m767 {
+  	font-size: 16px;
+  	padding-left: 15px;
+  	padding-right: 15px;
+  }
 }
 
 .select-profile::-ms-expand {
@@ -163,6 +281,10 @@ textarea.form-control {
 		td {
 			padding: 15px 0;
 		}
+
+		@include m1199 {
+			font-size: 16px;
+		}
 	}
 
 	&__title {
@@ -176,6 +298,10 @@ textarea.form-control {
 			padding: 10px 0;
 			font-size: 20px;
 			border-bottom: 2px solid #fff;
+
+			@include m1199 {
+				font-size: 16px;
+			}
 		}
 
 		&.active {
@@ -203,6 +329,21 @@ textarea.form-control {
 				text-align: center;
 			}
 		}
+
+		@include m1199 {
+			font-size: 14px;
+		}
+	}
+
+	@include m767 {
+		width: 780px;
+	}
+}
+
+.overflow-table {
+	@include m767 {
+		overflow-x: auto;
+		overflow-y: hidden;
 	}
 }
 

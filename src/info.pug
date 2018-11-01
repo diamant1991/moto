@@ -21,14 +21,14 @@ block content
 
 				.cabinet__content
 					.row
-						.col-lg-4
+						.col-lg-4.col-md-5
 							.profile-photo
 								.profile-photo__item(style="background-image: url(http://via.placeholder.com/310x310)")
 								.profile-photo__text 
 									span Изменить фото
-							button.btn.btn-blue.btn-profile.btn-profile--info(type="button") Сохранить
+							button.btn.btn-blue.btn-profile.btn-profile--info.for-desktop(type="button") Сохранить
 
-						.col-lg-7
+						.col-lg-7.col-md-7
 							.form-group.form-group--single
 								input.form-control(type="text" value="Фамилия Имя Очество")
 							.form-group.form-group--single
@@ -37,16 +37,18 @@ block content
 								input.form-control(type="text" value="+7 098 345 43 56")
 							.form-group
 								.row
-									.col-lg-4
+									.col-lg-4.form-group__col
 										input.form-control(type="text" placeholder="Страна")
-									.col-lg-4
+									.col-lg-4.form-group__col
 										input.form-control(type="text" placeholder="Область")
-									.col-lg-4
+									.col-lg-4.form-group__col
 										input.form-control(type="text" placeholder="Индекс")
 							.form-group.form-group--single
 								input.form-control(type="text" placeholder="Город")
 							.form-group.form-group--single
 								input.form-control(type="text" placeholder="Адрес")
+
+					button.btn.btn-blue.btn-profile.btn-profile--info.for-mobile(type="button") Сохранить
 
 							
 
@@ -56,3 +58,5 @@ block content
 	include pug/partials/map
 
 	include pug/partials/footer
+
+	include pug/partials/top-btn

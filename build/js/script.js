@@ -92,3 +92,15 @@ $('.order-table__title').click(function(e) {
     row.removeClass('is-active')
   }
 });
+
+$(window).scroll(function() {
+ if($(this).scrollTop() > 300) {
+  $('.top-btn').fadeIn();
+ } else {
+  $('.top-btn').fadeOut();
+ }
+});
+
+$('.top-btn').click(function() {
+  $('body,html').animate({scrollTop:0},800);
+});
