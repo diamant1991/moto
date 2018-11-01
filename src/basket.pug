@@ -12,13 +12,6 @@ block content
 			include pug/partials/breadcrumb
 
 			.basket
-				.basket__header
-					.basket__header__close
-					.basket__header__title 
-						| Спасибо за заказ!
-						a.basket__header__delete(href="#")
-					.basket__header__text В ближайшее время наши менеджеры свяжутся с Вами
-
 				.basket__content
 					.basket__wrapp
 						table.basket__table
@@ -26,7 +19,8 @@ block content
 								tr
 									td &nbsp;
 									td Артикул
-									td(colspan="2") &nbsp;
+									td Название
+									td Цена
 									td Количество
 									td Стоимость
 							tfoot
