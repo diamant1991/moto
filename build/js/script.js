@@ -104,3 +104,12 @@ $(window).scroll(function() {
 $('.top-btn').click(function() {
   $('body,html').animate({scrollTop:0},800);
 });
+
+$('.tab__item').click(function(e) {
+  e.preventDefault();
+  var $href = $(this).attr('href');
+  $('.tab__item').removeClass('is-active');
+  $(this).addClass('is-active');
+  $('.tab-pane').removeClass('is-active')
+  $($href).addClass('is-active');
+});

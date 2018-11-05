@@ -18,13 +18,20 @@ block content
 					include pug/partials/catalog
 
 					.tab.row.no-gutters
-						a(href="#").tab__item.is-active Рекомендуем
-						a(href="#").tab__item Новинки
-						a(href="#").tab__item Хит продаж
-						a(href="#").tab__item Скидки
-					
-					include pug/partials/products
+						a(href="#tab1").tab__item.is-active Рекомендуем
+						a(href="#tab2").tab__item Новинки
+						a(href="#tab3").tab__item Хит продаж
+						a(href="#tab4").tab__item Скидки
 
+					#tab1.tab-pane.is-active
+						include pug/partials/products
+					#tab2.tab-pane
+						include pug/partials/products
+					#tab3.tab-pane
+						include pug/partials/products
+					#tab4.tab-pane
+						include pug/partials/products
+					
 					include pug/partials/text-block
 
 	.manufacturer
