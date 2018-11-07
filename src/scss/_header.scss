@@ -263,3 +263,35 @@
 		cursor: pointer;
 	}
 }
+
+.location {
+	position: relative;
+
+	&__popup {
+		display: none;
+		position: absolute;
+		top: 130%;
+		left: 0;
+		width: 300px;
+		background: $color-blue;
+		padding: 15px;
+		z-index: 3;
+
+		&__content {
+			max-height: 200px;
+			overflow: auto;
+		}
+
+		&__item {
+			margin-bottom: 5px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		&__link {
+			color: #fff;
+		}
+	}
+}

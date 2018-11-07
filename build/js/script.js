@@ -113,3 +113,20 @@ $('.tab__item').click(function(e) {
   $('.tab-pane').removeClass('is-active')
   $($href).addClass('is-active');
 });
+
+$('.location__btn').click(function(e) {
+  e.preventDefault()
+  var popup = $(this).next()
+  if (popup.is(':hidden')) {
+    popup.fadeIn(350)
+  } else {
+    popup.fadeOut(350)
+  }
+});
+
+$('.location__popup__link').click(function(e) {
+  e.preventDefault();
+  var text = $(this).text();
+  $('.location__btn').text(text)
+  $('.location__popup').fadeOut(350)
+});

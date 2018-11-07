@@ -1373,6 +1373,27 @@ h2 {
     .dropdown-toggle {
       cursor: pointer; } }
 
+.location {
+  position: relative; }
+  .location__popup {
+    display: none;
+    position: absolute;
+    top: 130%;
+    left: 0;
+    width: 300px;
+    background: #73b4df;
+    padding: 15px;
+    z-index: 3; }
+    .location__popup__content {
+      max-height: 200px;
+      overflow: auto; }
+    .location__popup__item {
+      margin-bottom: 5px; }
+      .location__popup__item:last-child {
+        margin-bottom: 0; }
+    .location__popup__link {
+      color: #fff; }
+
 .social-scroll {
   position: fixed;
   z-index: 5;
