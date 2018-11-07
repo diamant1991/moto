@@ -228,3 +228,16 @@
 		}
 	}
 }
+
+.modal {
+	display: none;
+
+	&--review {
+		width: 700px;
+
+		@include m767 {
+			padding: 44px 15px;
+			width: 100%;
+		}
+	}
+}

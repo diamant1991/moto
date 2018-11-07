@@ -60,7 +60,7 @@ block content
 					h1.product__title Название товара
 					.product__info.row.no-gutters.align-items-center.justify-content-between
 						.product__articul Артикул: 	245463
-						a(href="#").btn.btn-blue Оставить отзыв
+						a(href="javascript:;" data-fancybox data-src="#modal-review").btn.btn-blue Оставить отзыв
 						.social
 							a(href="#").social__item
 								i.fa.fa-instagram
@@ -131,3 +131,10 @@ block content
 	include pug/partials/footer
 
 	include pug/partials/top-btn
+	
+
+	.modal.modal--review#modal-review
+		.form-group
+			textarea.form-control(placeholder="Коментарий")
+		.form-group.form-group--submit
+			button.btn.btn-blue.btn-profile.btn-profile--center(type="submit") Сохранить

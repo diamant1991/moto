@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="css/main.css?v=1541582970757">
+		<link rel="stylesheet" href="css/main.css?v=1541594574805">
 	</head>
 	<body>
 		<header class="header">
@@ -159,7 +159,7 @@
 					<div class="col-lg-6 product__right">
 						<h1 class="product__title">Название товара</h1>
 						<div class="product__info row no-gutters align-items-center justify-content-between">
-							<div class="product__articul">Артикул: 	245463</div><a class="btn btn-blue" href="#">Оставить отзыв</a>
+							<div class="product__articul">Артикул: 	245463</div><a class="btn btn-blue" href="javascript:;" data-fancybox data-src="#modal-review">Оставить отзыв</a>
 							<div class="social"><a class="social__item" href="#"><i class="fa fa-instagram"></i></a><a class="social__item" href="#"><i class="fa fa-youtube-play"></i></a><a class="social__item" href="#"><i class="fa fa-vk"></i></a></div>
 							<div class="rating"><a class="rating__item" href="#"><i class="fa fa-star"></i></a><a class="rating__item" href="#"><i class="fa fa-star"></i></a><a class="rating__item" href="#"><i class="fa fa-star-o"></i></a></div>
 						</div>
@@ -378,8 +378,17 @@
 			</div>
 		</footer>
 		<button class="top-btn" type="button"></button>
+		<div class="modal modal--review" id="modal-review">
+			<div class="form-group">
+				<textarea class="form-control" placeholder="Коментарий"></textarea>
+			</div>
+			<div class="form-group form-group--submit">
+				<button class="btn btn-blue btn-profile btn-profile--center" type="submit">Сохранить</button>
+			</div>
+		</div>
 		<script src="js/library/jquery-3.3.1.min.js"></script>
 		<script src="js/library/slick/slick.min.js"></script>
+		<script src="js/library/fancybox/jquery.fancybox.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>
