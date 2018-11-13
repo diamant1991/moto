@@ -3096,6 +3096,34 @@ h2 {
   .tab-pane.is-active {
     display: block; }
 
+.modal--success {
+  width: 845px;
+  background: #73b4df;
+  text-align: center;
+  color: #fff; }
+  @media (max-width: 767px) {
+    .modal--success {
+      width: 98%; } }
+
+.modal-title {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 30px; }
+
+.modal-text {
+  font-size: 16px;
+  line-height: 1.5; }
+  .modal-text b {
+    text-transform: uppercase; }
+
+.modal-status-title {
+  margin-top: 40px;
+  font-size: 24px; }
+
+.modal-status-text {
+  font-size: 16px;
+  line-height: 1.5; }
+
 .sorting {
   margin-top: 20px; }
   .sorting__title {
