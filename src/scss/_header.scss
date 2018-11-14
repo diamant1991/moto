@@ -208,16 +208,61 @@
 .nav {
 	background: #454443;
 
-	li {
-		display: inline-block;
-		vertical-align: middle;
-
-		@include m991 {
-			display: block;
-			width: 100%;
-		}
-	}
 	&__menu {
+		position: relative;
+
+		> li {
+			display: inline-block;
+			vertical-align: middle;
+
+			@media(min-width: 992px) {
+				&:hover {
+					> a{
+						background: $color-blue;
+					}
+					.nav__menu__drop {
+						display: block;
+					}
+				}
+			}
+			
+			@include m991 {
+				display: block;
+				width: 100%;
+			}
+		}
+
+		&__drop {
+			display: none;
+			position: absolute;
+			z-index: 5;
+			left: 0;
+			top: 100%;
+			width: 100%;
+			padding: 15px;
+			background: #454443;
+
+			&__title {
+				font-size: 16px;
+			}
+
+			&__list {
+				padding-left: 10px;
+
+				 li {
+				 	margin-top: 10px;
+				 }
+			}
+
+			a {
+				color: #fff;
+
+				&:hover {
+					color: $color-blue;
+				}
+			}
+		}
+
 		&__item {
 			display: block;
 			padding: 20px 10px;
