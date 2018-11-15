@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="css/main.css?v=1542273669753">
+		<link rel="stylesheet" href="css/main.css?v=1542279267885">
 	</head>
 	<body>
 		<header class="header">
@@ -114,58 +114,86 @@
 				</div></a></div>
 		<div class="content">
 			<div class="container">
-				<ul class="breadcrumb">
-					<li><a href="#">ГЛАВНАЯ  </a><span class="breadcrumb__delimiter">/</span></li>
-					<li><a href="#">КАТАЛОГ</a><span class="breadcrumb__delimiter">/</span></li>
-					<li>Снегоходы</li>
-				</ul>
-				<div class="basket">
-					<div class="basket__content">
-						<div class="basket__wrapp">
-							<table class="basket__table">
-								<thead>
-									<tr>
-										<td>&nbsp;</td>
-										<td>Артикул</td>
-										<td>Название</td>
-										<td>Цена</td>
-										<td>Количество</td>
-										<td>Стоимость</td>
-									</tr>
-								</thead>
-								<tfoot>
-									<td colspan="3">Итоговая сумма покупки:</td>
-									<td colspan="3"> <span>600.000 </span>руб.</td>
-								</tfoot>
-								<tbody>
-									<tr>
-										<td><img src="http://via.placeholder.com/120x75" alt=""></td>
-										<td>245678</td>
-										<td> Lorem ipsum dolor sit amet.</td>
-										<td>2 000 руб.</td>
-										<td> 
-											<div class="count count--basket"><a class="count__btn" href="#">-</a>
-												<input class="count__field" type="text" value="1"><a class="count__btn" href="#">+</a>
-											</div>
-										</td>
-										<td>20 000 руб.</td>
-									</tr>
-									<tr>
-										<td><img src="http://via.placeholder.com/120x75" alt=""></td>
-										<td>245678</td>
-										<td> Lorem ipsum dolor sit amet.</td>
-										<td>2 000 руб.</td>
-										<td> 
-											<div class="count count--basket"><a class="count__btn" href="#">-</a>
-												<input class="count__field" type="text" value="1"><a class="count__btn" href="#">+</a>
-											</div>
-										</td>
-										<td>20 000 руб.</td>
-									</tr>
-								</tbody>
-							</table>
+				<div class="row no-gutters justify-content-between">
+					<div class="sidebar">
+						<div class="sidebar__catalog">
+							<div class="sidebar__catalog__title row no-gutters align-items-center justify-content-between">
+								<div class="sidebar__catalog__title__text">Каталог</div>
+								<div class="sidebar__catalog__title__icon"><img src="images/burger.png" alt=""></div>
+							</div>
+							<ul class="sidebar__catalog__menu">
+								<li><a class="sidebar__catalog__menu__item" href="#"><span class="sidebar__catalog__menu__icon"><img src="images/moto-icon.png" alt=""></span><span class="sidebar__catalog__menu__name">Мотоциклы</span><i class="fa fa-angle-right"></i></a>
+									<ul class="sidebar__drop">
+										<li><a href="#"> <span>Подпункт 1</span><i class="fa fa-angle-right"></i></a>
+											<ul class="sidebar__drop__subdrop">
+												<li><a href="#">Подпункт 1</a></li>
+												<li><a href="#">Подпункт 2</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Подпункт 2</a></li>
+										<li><a href="#">Подпункт 3</a></li>
+									</ul>
+								</li>
+								<li><a class="sidebar__catalog__menu__item" href="#"><span class="sidebar__catalog__menu__icon"><img src="images/sneg-icon.png" alt=""></span><span class="sidebar__catalog__menu__name">Снегоходы</span><i class="fa fa-angle-right"></i></a></li>
+								<li><a class="sidebar__catalog__menu__item" href="#"><span class="sidebar__catalog__menu__icon"><img src="images/spares-icon.png" alt=""></span><span class="sidebar__catalog__menu__name">Запчасти</span><i class="fa fa-angle-right"></i></a></li>
+								<li><a class="sidebar__catalog__menu__item" href="#"><span class="sidebar__catalog__menu__icon"><img src="images/equip-icon.png" alt=""></span><span class="sidebar__catalog__menu__name">Экипировка</span><i class="fa fa-angle-right"></i></a></li>
+							</ul>
 						</div>
-						<div class="basket__footer"><a class="btn btn-blue btn-basket" href="#">Оформить заказ</a></div>
+						<div class="sidebar__sale"><a href="#">
+								<div class="sidebar__sale__label">Акция</div>
+								<div class="sidebar__sale__img" style="background-image: url(images/sale1.jpg)"></div>
+								<div class="sidebar__sale__text">поступление запчастей на cf-moto</div></a></div>
+						<div class="sidebar__sale"><a href="#">
+								<div class="sidebar__sale__img" style="background-image: url(images/sale2.jpg)"></div>
+								<div class="sidebar__sale__text sidebar__sale__text--black">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div></a></div>
+						<div class="sidebar__review">
+							<div class="sidebar__review__title row no-gutters align-items-center justify-content-between">
+								<div class="sidebar__review__title__name">Последние отзывы</div><a class="sidebar__review__title__link" href="#">Показать все</a>
+							</div>
+							<div class="sidebar__review__content">
+								<div class="sidebar__review__item row no-gutters justify-content-between">
+									<div class="sidebar__review__item__img"></div>
+									<div class="sidebar__review__item__info">
+										<div class="sidebar__review__item__autor"><span class="sidebar__review__item__autor__black">Alex:</span><span class="sidebar__review__item__autor__blue">Мотор Кавасаки</span></div>
+										<div class="sidebar__review__item__text">Все функции и привязка полноценно функционируют. В скором времени будут добавлены функции...</div>
+										<div class="sidebar__review__item__date"><span class="sidebar__review__item__date__icon"><img src="images/calendar.png" alt=""></span><span>15.09.2017</span></div>
+									</div>
+								</div>
+								<div class="sidebar__review__item row no-gutters justify-content-between">
+									<div class="sidebar__review__item__img"></div>
+									<div class="sidebar__review__item__info">
+										<div class="sidebar__review__item__autor"><span class="sidebar__review__item__autor__black">Alex:</span><span class="sidebar__review__item__autor__blue">Мотор Кавасаки</span></div>
+										<div class="sidebar__review__item__text">Все функции и привязка полноценно функционируют. В скором времени будут добавлены функции...</div>
+										<div class="sidebar__review__item__date"><span class="sidebar__review__item__date__icon"><img src="images/calendar.png" alt=""></span><span>15.09.2017 </span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content__right">
+						<ul class="breadcrumb">
+							<li><a href="#">ГЛАВНАЯ  </a><span class="breadcrumb__delimiter">/</span></li>
+							<li><a href="#">КАТАЛОГ</a><span class="breadcrumb__delimiter">/</span></li>
+							<li>Снегоходы</li>
+						</ul>
+						<div class="category row">
+							<div class="col-xl-4 col-md-6"><a href="#">
+									<div class="product-item product-item--cat">
+										<div class="product-img row no-gutters align-items-center justify-content-between">
+											<div><img src="images/motor.png" alt=""></div>
+										</div>
+										<div class="product-name product-name--cat">Название</div>
+										<div class="product-number product-number--cat">220 товаров</div>
+									</div></a></div>
+							<div class="col-xl-3 col-md-6"><a href="#">
+									<div class="product-item product-item--cat">
+										<div class="product-img row no-gutters align-items-center justify-content-between">
+											<div><img src="images/motor.png" alt=""></div>
+										</div>
+										<div class="product-name product-name--cat">Название</div>
+										<div class="product-number product-number--cat">220 товаров</div>
+									</div></a></div>
+						</div>
 					</div>
 				</div>
 			</div>

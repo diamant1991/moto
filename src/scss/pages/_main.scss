@@ -242,6 +242,16 @@
 		border-radius: 4px;
 		margin-bottom: 20px;
 
+		&--cat {
+			border-color: #73b4df;
+
+			&:hover {
+				.product-name {
+					text-decoration: underline;
+				}
+			}
+		}
+
 		&:hover {
 			border-color: $color-blue;
 		}
@@ -258,10 +268,19 @@
 
 	&-name {
 		font-size: 16px;
+
+		&--cat {
+			font-size: 18px;
+		}
 	}
 
 	&-number {
 		font-size: 12px;
+
+		&--cat {
+			margin-top: 20px;
+			font-size: 14px;
+		}
 	}
 	
 	&-text {
