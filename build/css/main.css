@@ -2309,7 +2309,7 @@ h2 {
         left: 100%;
         top: -10px;
         padding: 15px;
-        background-color: #fafafa;
+        background-color: #ededed;
         -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.23);
            -moz-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.23);
                 box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.23); }
@@ -2455,6 +2455,20 @@ h2 {
     -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
        -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1); }
+    .sidebar__drop__item + .sidebar__drop__item {
+      margin-top: 25px; }
+    .sidebar__drop__title {
+      font-size: 20px; }
+    .sidebar__drop__list {
+      margin-top: 10px;
+      padding-left: 20px; }
+      .sidebar__drop__list > li {
+        position: relative;
+        display: table; }
+        .sidebar__drop__list > li:hover .sidebar__drop__subdrop {
+          display: block; }
+        .sidebar__drop__list > li > a .fa {
+          margin-left: 5px; }
     .sidebar__drop__subdrop {
       display: none;
       position: absolute;
@@ -2468,13 +2482,6 @@ h2 {
               box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1); }
     .sidebar__drop li + li {
       margin-top: 10px; }
-    .sidebar__drop > li {
-      position: relative;
-      display: table; }
-      .sidebar__drop > li:hover .sidebar__drop__subdrop {
-        display: block; }
-      .sidebar__drop > li > a .fa {
-        margin-left: 5px; }
     .sidebar__drop a {
       color: #000; }
       .sidebar__drop a:hover {
