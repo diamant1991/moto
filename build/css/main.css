@@ -2238,15 +2238,54 @@ h2 {
 
 .nav {
   background: #454443; }
+  .nav__catalog {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    top: 100%;
+    padding: 15px 0;
+    background: #454443;
+    width: 220px; }
+    @media (min-width: 992px) {
+      .nav__catalog > ul > li:hover > a {
+        color: #73b4df; }
+      .nav__catalog > ul > li:hover .nav__menu__drop {
+        display: block; } }
+    .nav__catalog__item {
+      position: relative;
+      display: block;
+      color: #fff;
+      line-height: 40px;
+      padding-left: 40px;
+      padding-right: 15px; }
+      .nav__catalog__item .fa {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+           -moz-transform: translate(0, -50%);
+            -ms-transform: translate(0, -50%);
+             -o-transform: translate(0, -50%);
+                transform: translate(0, -50%); }
+      .nav__catalog__item:hover {
+        color: #73b4df; }
+    .nav__catalog__icon {
+      position: absolute;
+      top: 9px;
+      left: 10px;
+      width: 22px;
+      height: 22px; }
   .nav__menu {
     position: relative; }
     .nav__menu > li {
+      position: relative;
       display: inline-block;
       vertical-align: middle; }
       @media (min-width: 992px) {
         .nav__menu > li:hover > a {
           background: #73b4df; }
-        .nav__menu > li:hover .nav__menu__drop {
+        .nav__menu > li:hover .nav__catalog {
           display: block; } }
       @media (max-width: 991px) {
         .nav__menu > li {
@@ -2256,8 +2295,8 @@ h2 {
       display: none;
       position: absolute;
       z-index: 5;
-      left: 0;
-      top: 100%;
+      left: 100%;
+      top: 0;
       padding: 15px;
       background: #454443;
       width: 400px; }

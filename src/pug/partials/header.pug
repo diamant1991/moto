@@ -79,28 +79,41 @@ header.header
 					a(href="#").nav__menu__item главная
 				li
 					a(href="#").nav__menu__item каталог
-					.nav__menu__drop
-						.nav__menu__drop__item
-							a.nav__menu__drop__title(href="#") Название
-							ul.nav__menu__drop__list
-								li
-									a(href="#") Подпункт 1
-								li
-									a(href="#")
-										span Подпункт 2
-										i.fa.fa-angle-right
-									ul.nav__menu__drop__subdrop
-										li
-											a(href="#") Подпункт 1
-										li
-											a(href="#") Подпункт 2
-						.nav__menu__drop__item
-							a.nav__menu__drop__title(href="#") Название
-							ul.nav__menu__drop__list
-								li
-									a(href="#") Подпункт 1
-								li
-									a(href="#") Подпункт 2
+					.nav__catalog
+						ul
+							li
+								a.nav__catalog__item(href="#")
+									img.nav__catalog__icon(src="http://via.placeholder.com/22x22", alt="")
+									span Мотоциклы
+									i.fa.fa-angle-right
+								.nav__menu__drop
+									.nav__menu__drop__item
+										a.nav__menu__drop__title(href="#") Название
+										ul.nav__menu__drop__list
+											li
+												a(href="#") Подпункт 1
+											li
+												a(href="#")
+													span Подпункт 2
+													i.fa.fa-angle-right
+												ul.nav__menu__drop__subdrop
+													li
+														a(href="#") Подпункт 1
+													li
+														a(href="#") Подпункт 2
+									.nav__menu__drop__item
+										a.nav__menu__drop__title(href="#") Название
+										ul.nav__menu__drop__list
+											li
+												a(href="#") Подпункт 1
+											li
+												a(href="#") Подпункт 2
+							li
+								a.nav__catalog__item(href="#")
+									img.nav__catalog__icon(src="http://via.placeholder.com/22x22", alt="")
+									span Еще что-то
+									i.fa.fa-angle-right
+					
 				li
 					a(href="#").nav__menu__item производители
 				li
