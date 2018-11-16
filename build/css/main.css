@@ -2245,7 +2245,7 @@ h2 {
     left: 0;
     top: 100%;
     padding: 15px 0;
-    background: #454443;
+    background: #ededed;
     width: 220px; }
     @media (min-width: 992px) {
       .nav__catalog > ul > li:hover > a {
@@ -2255,7 +2255,7 @@ h2 {
     .nav__catalog__item {
       position: relative;
       display: block;
-      color: #fff;
+      color: #000;
       line-height: 40px;
       padding-left: 40px;
       padding-right: 15px; }
@@ -2298,7 +2298,7 @@ h2 {
       left: 100%;
       top: 0;
       padding: 15px;
-      background: #454443;
+      background: #ededed;
       width: 400px; }
       .nav__menu__drop__item + .nav__menu__drop__item {
         margin-top: 30px; }
@@ -2335,7 +2335,7 @@ h2 {
         .nav__menu__drop__list .fa {
           margin-left: 5px; }
       .nav__menu__drop a {
-        color: #fff; }
+        color: #000; }
         .nav__menu__drop a:hover {
           color: #73b4df; }
     .nav__menu__item {
